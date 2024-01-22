@@ -1,0 +1,619 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#homepage{
+    height: 100%;
+    width: 100%;
+    background-image: url(./Venom.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navleft img{
+    margin-left: 20%;
+}
+
+#navright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14%;
+    margin-right: 23%;
+}
+
+#navright a{
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+}
+
+#navright a:before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    border-radius: 25px;
+    transform: scaleX(0);
+    background: red;
+    transform-origin: right;
+    transition: transform 0.5s ease;
+}
+
+#navright a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#navright button{
+    padding: 3% 7%;
+    font-size: 1.5rem;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+#homediv{
+    height: 90%;
+    width: 100%;
+    display: flex;
+}
+
+#homediv_left{
+    height: 100%;
+    width: 50%;
+}
+
+#venom_logo{
+    height: 75%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: end ;
+    flex-direction: column;
+    position: relative;
+    padding-left: 8%;
+    padding-right: 0%;
+}
+
+#venom_logo img{
+    height: 25%;
+    width: 75%;
+}
+
+#venom_logo h1{
+    position: absolute;
+    z-index: 0;
+    top: 52%;
+    left: 45%;
+    font-size: 1.5vw;
+    color: rgba(245, 245, 245, 0.384);
+}
+
+#venom_logo #left_button{
+    display: flex;
+    color:  rgba(245, 245, 245, 0.384);
+    font-size: 1vw;
+    font-weight: 900;
+    gap: 1vw;
+    margin-top: 30%;
+}
+
+#left_button button{
+    padding: 1.5vh 3vh;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: red;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+}
+
+#left_button button:hover{
+    background: linear-gradient(#fffefe,#8c8b8b,#949494,#000000);
+    color: #ff0000;
+    font-weight: bolder;
+}
+
+#homediv_right{
+    height: 100%;
+    width: 50%;
+}
+
+#homediv_right #right_top{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    color: rgba(245, 245, 245, 0.384);
+    padding-right: 30%;
+    padding-bottom: 7%;
+}
+
+#right_top h2{
+    font-size: 1.5vw;
+    padding-right: 20%;
+}
+
+#right_top h2 span{
+    font-size: 0.7vw;
+}
+
+#right_top h1{
+    font-size: 2.5vw;
+}
+
+#homediv_right #right_bottom{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    color: rgba(245, 245, 245, 0.384);
+    font-size: 0.6vw;
+    font-weight: 50;
+    padding-right: 4%;
+}
+
+#right_bottom h2 span{
+    font-size: 4vw;
+    color: rgba(255, 0, 0, 0.577);
+    font-family: fantasy;
+}
+
+#right_bottom i{
+    font-size: 1.5vw;
+    font-weight: 400;
+    margin-bottom: 1%;
+    color: whitesmoke;
+}
+
+#second_page{
+    height: 150%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding-top: 8%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#second_page #main_card{
+    height: 70%;
+    width: 100%;
+}
+
+#second_page #main_card #hadding{
+    height: 20%;
+    width: 100%;
+    color: whitesmoke;
+}
+
+#second_page #hadding h1{
+    font-weight: 100;
+    font-family: fantasy;
+    font-size: 1.5vw;
+}
+
+#second_page #hadding #line{
+    height: 2%;
+    width: 100%;
+    background: linear-gradient(  to right, red, black);
+    border-radius: 2rem;
+    margin-top: 0.5%;
+}
+
+#second_page #hadding #buttons{
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    gap: 5%;
+    height: 40%;
+    width: 80%;
+}
+
+#second_page #hadding #buttons button{
+    padding: 1% 4%;
+    color: whitesmoke;
+    background-color: rgba(128, 128, 128, 0.238);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all ease-in 0.3s;
+}
+
+#second_page #hadding #buttons #all_items{
+    background-color: red;
+}
+
+#second_page #hadding #buttons button:hover{
+    background-color: rgba(255, 0, 0, 0.784);
+}
+
+#second_page #main_card .cards{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+#second_page .card{
+    height: 100%;
+    width: 18%;
+    border-radius: 1rem;
+    color: aliceblue;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#second_page .card .photos{
+    height: 85%;
+    width: 100%;
+}
+
+#second_page #card1 .photos{
+    background-image: url(https://image.tmdb.org/t/p/original/gFlaCU0HPlbho3mpgFRuMKKvAlo.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#second_page #card2 .photos{
+    background-image: url(https://i.pinimg.com/originals/44/19/f4/4419f4f02f5680114741336c6f7046b0.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#second_page #card3 .photos{
+    background-image: url(https://th.bing.com/th/id/OIP.t9cynXs4souqfrYuBy0ihQHaK-?pid=ImgDet&rs=1);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#second_page #card4 .photos{
+    background-image: url(https://image.tmdb.org/t/p/original/vn4vJSzAvkHeVp6TSnjppotoLqQ.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#second_page #card5 .photos{
+    background-image: url(https://image.tmdb.org/t/p/original/Zz7pJs2XasymxBkfw44ZLZr9oL.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#second_page #card6 .photos{
+    background-image: url(https://th.bing.com/th/id/R.78e54ddfa59707a3a4fa78e542192552?rik=3jKoo0XVekZulQ&riu=http%3a%2f%2fcdn.collider.com%2fwp-content%2fuploads%2f2017%2f06%2fblack-panther-movie-poster-teaser.jpg&ehk=hBm3mZZtUeIuc80jPuPdkCMf4niEJWD4WWXFKIgehMQ%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#second_page #card7 .photos{
+    background-image: url(https://th.bing.com/th/id/R.32698f1c36c7a39fca93829965f41837?rik=dY7WXq3bH5pR8A&riu=http%3a%2f%2f4.bp.blogspot.com%2f--nPEMSyLyo8%2fTcGCkDuk2jI%2fAAAAAAAAHFQ%2fbxxUOo_JIe0%2fs1600%2fthor-international-poster-02.jpg&ehk=9b0pS9BGB5tNKDW7G9Z%2bcRWjzhojWO%2bcA9iLvPidTpU%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#second_page #card8 .photos{
+    background-image: url(https://th.bing.com/th/id/R.d618d08a8ae755baa26a4ff9e6ae0a65?rik=dIVzJLyGs0Tc3g&riu=http%3a%2f%2fcdn.collider.com%2fwp-content%2fuploads%2f2018%2f11%2fbumblebee-poster.jpg&ehk=bKrcOGSdFVR2vPKbz57xiEHsMi9Q%2f9MBFUEmNPjlwes%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#second_page #card9 .photos{
+    background-image: url(https://th.bing.com/th/id/OIP.VFC9jkij0nbfcnrJeBdrkAAAAA?pid=ImgDet&rs=1);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#second_page #card10 .photos{
+    background-image: url(https://cdn.traileraddict.com/content/screen-gems/underworld-blood-wars-poster-7.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#second_page .cards .card:hover{
+    scale: 1.15;
+
+}
+
+#second_page .card .photos_name{
+    padding-top: 8%;
+    height: 15%;
+    width: 100%;
+}
+
+#second_page .card .photos_name h3{
+    padding-top: 5%;
+    color: rgba(240, 248, 255, 0.407);
+}
+
+#third_page{
+    height: 80%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding-top: 8%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#third_page #main_card{
+    height: 100%;
+    width: 100%;
+}
+
+#third_page #main_card #hadding{
+    height: 30%;
+    width: 100%;
+    color: whitesmoke;
+}
+
+#third_page #hadding h1{
+    font-weight: 100;
+    font-family: fantasy;
+    font-size: 1.5vw;
+}
+
+#third_page #hadding #line{
+    height: 2%;
+    width: 100%;
+    background: linear-gradient(  to right, red, black);
+    border-radius: 2rem;
+    margin-top: 0.5%;
+}
+
+#third_page #main_card .cards{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+#third_page .card{
+    height: 100%;
+    width: 18%;
+    border-radius: 1rem;
+    color: aliceblue;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#third_page #main_page .photos_name{
+    height: 40%;
+    padding-top: 80%;
+}
+
+#third_page .card .photos{
+    height: 70%;
+    width: 100%;
+    border: 2px solid white;
+    position: relative;
+    overflow: hidden;
+}
+
+#third_page #card1 .photos{
+    background-image: url(https://th.bing.com/th/id/OIP.gZ0B7DbUDoRQu-btcUBYTwHaLH?pid=ImgDet&rs=1);
+    background-size: cover;
+    background-position: 50% 25%;
+    border-radius: 1rem;
+}
+
+#third_page #card2 .photos{
+    background-image: url(https://i.pinimg.com/originals/26/28/c8/2628c8ccb8618b25943b95729ccb9111.jpg);
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 1rem;
+}
+
+#third_page #card3 .photos{
+    background-image: url(https://th.bing.com/th/id/OIP.-ypmKx9ZQBNMyvtb1M1EJAHaLH?pid=ImgDet&rs=1);
+    background-size: cover;
+    background-position: top;
+    border-radius: 1rem;
+}
+
+#third_page #card4 .photos{
+    background-image: url(https://th.bing.com/th/id/OIP.YbqIOEztwHa3w_UkSBAFkQHaKu?pid=ImgDet&rs=1);
+    background-size: cover;
+    background-position: top;
+    border-radius: 1rem;
+}
+
+#third_page #card5 .photos{
+    background-image: url(https://i0.wp.com/tiffanyyong.com/wp-content/uploads/2015/09/Assassin-Poster.jpg);
+    background-size: cover;
+    background-position: top;
+    border-radius: 1rem;
+}
+
+#third_page .card .photos_name{
+    padding-top: 8%;
+    height: 15%;
+    width: 100%;
+}
+
+#third_page .card .photos_name h3{
+    padding-top: 5%;
+    color: rgba(240, 248, 255, 0.407);
+}
+
+#third_page .photos .month{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    border: 1px solid red;
+    border-radius: 1rem;
+    scale: 0;
+    top: -100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all cubic-bezier(0.23, 1, 0.320, 1) 1s;
+}
+
+#third_page .photos .month button{
+    padding: 4% 8%;
+    color: aliceblue;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    background-color: #ff0000;
+}
+
+#third_page .photos .month i{
+    font-size: 2vw;
+    background-color: red;
+    border: 2px solid red;
+}
+
+#third_page .photos:hover .month{
+    scale: 1;
+    top: 0%;
+}
+
+#lastpage{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.freeiconspng.com/uploads/batman-png-33.png);
+    background-size: cover;
+    background-position: 0% 5%;
+}
+
+#lastpage #main_div{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.412);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#lastpage #main_div #hadding{
+    height: 20%;
+    width: 90%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: white;
+    font-size: 1vw;
+    font-style: oblique;
+}
+
+#lastpage #main_div #news{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+#lastpage #main_div #news .divs{
+    height: 60%;
+    width: 22%;
+}
+
+#lastpage #main_div #news .divs .photos{
+    height: 90%;
+    width: 100%;
+    box-shadow: 4px 2px 40px 40px rgba(0, 0, 0, 0.656);
+}
+
+#lastpage #main_div #news .divs #div1{
+    background-image: url(https://cdn3.vectorstock.com/i/1000x1000/98/42/color-background-billboard-banner-with-film-reel-vector-15899842.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#lastpage #main_div #news .divs #div2{
+    background-image: url(https://th.bing.com/th/id/OIP.v4PmIfEI8-o4r97fZS5XGwHaEK?pid=ImgDet&rs=1);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#lastpage #main_div #news .divs #div3{
+    background-image: url(https://th.bing.com/th/id/OIP.qxWs827-s1PsMzLBVvTC9AHaDt?pid=ImgDet&rs=1);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#lastpage #main_div #news .divs #div4{
+    background-image: url(https://image.freepik.com/free-vector/poster-with-cinema-chair-film-reel-popcorn_18591-8620.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#lastpage #main_div #news .divs .para{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: whitesmoke;
+    padding-top: 2%;
+}
+
+#lastpage #main_div #footer{
+    height: 10%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.701);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+#lastpage #main_div #footer #Social_id{
+    display: flex;
+    align-items: center;
+    gap: 8%;
+}
+
+#lastpage #main_div #footer i{
+    color: aliceblue;
+    font-size: 2vw;
+}
